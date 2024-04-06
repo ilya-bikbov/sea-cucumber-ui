@@ -6,7 +6,7 @@ import axios from 'axios';
 
 export default function Home() {
   useEffect(() => {
-    axios.get('https://sea-cucumber-service-production.up.railway.app/')
+    axios.get('https://sea-cucumber-service.vercel.app/')
         .then(function (response) {
           console.log(response.data);
         })
