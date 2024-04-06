@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "serve": "next serve"
+    "serve": "npx serve out"
   },
   "dependencies": {
     "react": "^18",
