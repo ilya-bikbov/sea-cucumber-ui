@@ -1,7 +1,19 @@
+"use client"; // This is a client component 👈🏽
 import Image from "next/image";
 import styles from "./page.module.css";
+import {useEffect} from "react";
+import axios from 'axios';
 
 export default function Home() {
+  useEffect(() => {
+    axios.get('https://sea-cucumber-service-production.up.railway.app/')
+        .then(function (response) {
+          console.log(response.data);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+  }, []);
   return (
     <main className={styles.main}>
       <div className={styles.description}>
