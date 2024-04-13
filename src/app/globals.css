@@ -210,7 +210,7 @@ a {
 #menu-appbar > .MuiPaper-root > .MuiList-root > .MuiMenuItem-root {
   padding-left: 0;
   padding-right: 0;
-
+  color: #8D8D8D;
   font-size: 12px;
   font-weight: 700;
   line-height: 14.52px;
